@@ -36,24 +36,22 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
-
-
+foo.txt
 ==========
 7. Create another new file using touch.
 
 $ touch bar.txt
 ----------
 
-
-
 ==========
 8. List the files in this directory using the flag that gives the most details.
 
 Copy and paste the output below.
 ----------
-
-
+drwxr-xr-x  4 edwin.bishop18  ACADEMIC\Domain Users  128 Sep 25 19:03 .
+drwxr-xr-x  3 edwin.bishop18  ACADEMIC\Domain Users   96 Sep 25 19:02 ..
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:03 bar.txt
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:02 foo.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -61,22 +59,37 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
-
-
+cp bar.txt baz.txt
+ls -lat
+drwxr-xr-x  5 edwin.bishop18  ACADEMIC\Domain Users  160 Sep 25 19:05 .
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:05 baz.txt
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:03 bar.txt
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:02 foo.txt
+drwxr-xr-x  3 edwin.bishop18  ACADEMIC\Domain Users   96 Sep 25 19:02 ..
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt
+total 0
+drwxr-xr-x  4 edwin.bishop18  ACADEMIC\Domain Users  128 Sep 25 19:06 .
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:05 baz.txt
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:02 foo.txt
+drwxr-xr-x  3 edwin.bishop18  ACADEMIC\Domain Users   96 Sep 25 19:02 ..
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
-
+mv foo.txt qux.txt
+total 0
+drwxr-xr-x  4 edwin.bishop18  ACADEMIC\Domain Users  128 Sep 25 19:07 .
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:05 baz.txt
+-rw-r--r--  1 edwin.bishop18  ACADEMIC\Domain Users    0 Sep 25 19:02 qux.txt
+drwxr-xr-x  3 edwin.bishop18  ACADEMIC\Domain Users   96 Sep 25 19:02 ..
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -90,17 +103,15 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
-
-
+rmdir my_files
+rmdir:my_files/: Directory not empty
 ==========
 14. Try removing the directory called my_files using rm.
 
 Write out the command that you used and what happened.
 ----------
-
-
-
+rm my_files
+rm: my_files/: is a directory
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
 
@@ -108,9 +119,6 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
-
-
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
 
@@ -120,8 +128,6 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
-
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
