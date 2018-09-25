@@ -15,30 +15,24 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
-
-
+cd ~
 ==========
 2. Prove that you're in your home directory.
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
-
+pwd 
+/Users/edwin.bishop18
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
-
-
+find mtech1002
+find:mtech1002: No such file or directory
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
 ----------
-
-
 
 ==========
 5. Delete these directories from your home folder by using this command:
@@ -52,8 +46,6 @@ $ rm -rf mtec1002-labs-02
 (skip if these directories don't exist)
 ----------
 
-
-
 ==========
 6.  A compressed archive (.tar.gz) of the lab files can be found at this url: 
 
@@ -65,16 +57,12 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
-
-
-
+curl -O http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
-
 
 ==========
 8.  You should now have a directory called mtec1002-lab-03 in your home directory.  Verify that this directory exists.
